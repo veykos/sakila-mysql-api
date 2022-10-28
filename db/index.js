@@ -1,5 +1,5 @@
 // require the mysql package;
-const mysql = require('mysql2')
+const mysql = require('mysql2');
 
 // ℹ️ Sets the MongoDB URI for our app to have access to it.
 // If no env has been set, we dynamically set it to whatever the folder name was upon the creation of the app
@@ -15,3 +15,5 @@ connection.connect((err) => {
   if (err) throw err;
   console.log('Connected to DB')
 })
+
+module.exports = connection
